@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Вход и регистрация — магазин косметики SELVE.">
+    <title>Вход и регистрация — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page auth-page content-page">
+      <h1 class="visually-hidden">Вход и регистрация</h1>
+      <div class="row auth-grid">
+        <section class="col-md-6" aria-labelledby="login-title">
+          <form class="auth-panel" action="account.html" method="get">
+            <div class="auth-heading">
+              <span class="logo">SELVE</span>
+              <h2 id="login-title">Войдите в свой аккаунт</h2>
+            </div>
+            <div class="auth-fields">
+              <div>
+                <label class="visually-hidden" for="login-email">Email</label>
+                <input class="form-control" id="login-email" type="email" placeholder="Email" autocomplete="username" required>
+              </div>
+              <div>
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="form-control" id="login-password" type="password" placeholder="Пароль" autocomplete="current-password" minlength="6" required>
+              </div>
+            </div>
+            <div class="auth-submit">
+              <button class="btn btn-selve" type="submit">Войти</button>
+            </div>
+          </form>
+        </section>
+        <section class="col-md-6" aria-labelledby="register-title">
+          <form id="register-form" class="auth-panel" action="account.html" method="get">
+            <div class="auth-heading registration">
+              <h2 id="register-title">Создайте аккаунт</h2>
+            </div>
+            <div class="auth-fields">
+              <div>
+                <label class="visually-hidden" for="register-name">Имя</label>
+                <input class="form-control" id="register-name" type="text" placeholder="Имя" autocomplete="given-name" minlength="2" maxlength="60" required>
+              </div>
+              <div>
+                <label class="visually-hidden" for="register-email">Email</label>
+                <input class="form-control" id="register-email" type="email" placeholder="Email" autocomplete="email" required>
+              </div>
+              <div>
+                <label class="visually-hidden" for="register-password">Пароль — от 6 символов</label>
+                <input class="form-control" id="register-password" type="password" placeholder="Пароль — от 6 символов" autocomplete="new-password" minlength="6" required>
+              </div>
+              <div>
+                <label class="visually-hidden" for="register-confirm">Повторите пароль</label>
+                <input class="form-control" id="register-confirm" type="password" placeholder="Повторите пароль" autocomplete="new-password" minlength="6" required>
+              </div>
+            </div>
+            <div class="auth-submit">
+              <button class="btn btn-selve" type="submit">Зарегистрироваться</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <p class="small-note auth-caption">После заполнения открывается пример личного кабинета.</p>
+    </main>
+        <script>
+      const form = document.getElementById("register-form");
+      const password = document.getElementById("register-password");
+      const repeat = document.getElementById("register-confirm");
+
+      function checkPasswords() {
+        if (password.value !== repeat.value) {
+          repeat.setCustomValidity("Пароли не совпадают");
+        } else {
+          repeat.setCustomValidity("");
+        }
+      }
+
+      password.addEventListener("input", checkPasswords);
+      repeat.addEventListener("input", checkPasswords);
+
+      form.addEventListener("submit", function (event) {
+        checkPasswords();
+
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          form.reportValidity();
+        }
+      });
+    </script>
+  </body>
+</html>

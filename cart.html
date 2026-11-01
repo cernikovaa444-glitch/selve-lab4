@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Корзина — магазин косметики SELVE.">
+    <title>Корзина — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page content-page">
+      <nav aria-label="Хлебные крошки">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+        </ol>
+      </nav>
+      <h1>Корзина</h1>
+      <div class="cart-content">
+        <article class="cart-row">
+          <img class="photo" src="images/lipstick.jpg" alt="Губная помада" loading="lazy">
+          <h2 class="cart-name">
+            <a href="product-lipstick.html">Губная помада</a>
+            <span>Макияж</span>
+          </h2>
+          <div class="quantity" aria-label="Количество товара">
+            <button type="button" disabled aria-label="Уменьшить количество недоступно в макете">−</button>
+            <input type="text" value="1" readonly aria-label="Количество: 1">
+            <button type="button" disabled aria-label="Увеличить количество недоступно в макете">+</button>
+          </div>
+          <strong class="price">1 990 ₽</strong>
+        </article>
+        <article class="cart-row">
+          <img class="photo" src="images/daily-care.jpg" alt="Питательный крем" loading="lazy">
+          <h2 class="cart-name">
+            <a href="product-daily-care.html">Питательный крем</a>
+            <span>Daily Care</span>
+          </h2>
+          <div class="quantity" aria-label="Количество товара">
+            <button type="button" disabled aria-label="Уменьшить количество недоступно в макете">−</button>
+            <input type="text" value="1" readonly aria-label="Количество: 1">
+            <button type="button" disabled aria-label="Увеличить количество недоступно в макете">+</button>
+          </div>
+          <strong class="price">2 590 ₽</strong>
+        </article>
+        <article class="cart-row">
+          <img class="photo" src="images/concealer.jpg" alt="Консилер" loading="lazy">
+          <h2 class="cart-name">
+            <a href="product-concealer.html">Консилер</a>
+            <span>Natural Finish</span>
+          </h2>
+          <div class="quantity" aria-label="Количество товара">
+            <button type="button" disabled aria-label="Уменьшить количество недоступно в макете">−</button>
+            <input type="text" value="1" readonly aria-label="Количество: 1">
+            <button type="button" disabled aria-label="Увеличить количество недоступно в макете">+</button>
+          </div>
+          <strong class="price">419 ₽</strong>
+        </article>
+        <div class="cart-total">
+          <p>Итого:  4 999 ₽</p>
+          <a class="btn btn-selve" href="checkout.html">Оформить заказ</a>
+        </div>
+        <p class="small-note mt-4">Состав и количество товаров зафиксированы.</p>
+      </div>
+    </main>
+  </body>
+</html>

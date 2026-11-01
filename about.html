@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="О магазине — магазин косметики SELVE.">
+    <title>О магазине — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html" aria-current="page">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page about-page px-0">
+      <nav aria-label="Путь по сайту">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">О магазине</li>
+        </ol>
+      </nav>
+      <h1>О нас</h1>
+      <div class="about-layout">
+        <section class="about-story" aria-label="История SELVE">
+          <img class="photo" src="images/about-banner.png" alt="Косметика справа на светлом бежевом фоне">
+          <div>
+            <span class="logo">SELVE</span>
+            <p>Красота начинается с заботы о себе.<br>В SELVE мы собрали косметику для ежедневного ухода, любимого макияжа и маленьких личных ритуалов.</p>
+            <p>Выбирайте средства, которые подходят именно вам, и открывайте новое в привычном уходе.</p>
+          </div>
+        </section>
+        <div class="advantages">
+          <section class="advantage">
+            <span class="advantage-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 12 5 5L20 7"></path>
+                <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+            </span>
+            <h2>Только оригинальная продукция</h2>
+          </section>
+          <section class="advantage">
+            <span class="advantage-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21 3 12C-3 4 7-2 12 5 17-2 27 4 21 12L12 21Z"></path>
+              </svg>
+            </span>
+            <h2>Забота о клиентах</h2>
+          </section>
+          <section class="advantage">
+            <span class="advantage-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9h18v4H3zM5 13v9h14v-9M12 9v13"></path>
+                <path d="M12 9C1 8 6-3 12 9c6-12 11-1 0 0Z"></path>
+              </svg>
+            </span>
+            <h2>Ежегодные акции</h2>
+          </section>
+          <section class="advantage">
+            <span class="advantage-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M1 4h13v13H1zM14 9h5l4 5v3h-9"></path>
+                <circle cx="6" cy="19" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+              </svg>
+            </span>
+            <h2>Быстрая доставка</h2>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+

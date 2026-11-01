@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Бренды — магазин косметики SELVE. Учебный проект по HTML и Bootstrap.">
+    <title>Бренды — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html" aria-current="page">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page content-page">
+      <nav aria-label="Путь по сайту">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Бренды</li>
+        </ol>
+      </nav>
+      <h1>Бренды</h1>
+      <div class="row row-cols-2 row-cols-md-4 brand-grid g-3">
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="L’Oréal Paris — перейти в каталог">
+            <img src="images/brands/loreal-paris.png" alt="L’Oréal Paris" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="La Roche-Posay — перейти в каталог">
+            <img src="images/brands/la-roche-posay.png" alt="La Roche-Posay" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Maybelline New York — перейти в каталог">
+            <img src="images/brands/maybelline.png" alt="Maybelline New York" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Catrice — перейти в каталог">
+            <img src="images/brands/catrice.png" alt="Catrice" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="NYX — перейти в каталог">
+            <img src="images/brands/nyx.png" alt="NYX" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="VICHY — перейти в каталог">
+            <img src="images/brands/vichy.png" alt="VICHY" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="NIVEA — перейти в каталог">
+            <img src="images/brands/nivea.png" alt="NIVEA" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Bioderma — перейти в каталог">
+            <img src="images/brands/bioderma.png" alt="Bioderma" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Garnier — перейти в каталог">
+            <img src="images/brands/garnier.png" alt="Garnier" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Clinique — перейти в каталог">
+            <img src="images/brands/clinique.png" alt="Clinique" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Clarins — перейти в каталог">
+            <img src="images/brands/clarins.png" alt="Clarins" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Lancôme — перейти в каталог">
+            <img src="images/brands/lancome.png" alt="Lancôme" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Shiseido — перейти в каталог">
+            <img src="images/brands/shiseido.png" alt="Shiseido" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Essence — перейти в каталог">
+            <img src="images/brands/essence.png" alt="Essence" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="Estée Lauder — перейти в каталог">
+            <img src="images/brands/estee-lauder.png" alt="Estée Lauder" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+        <div class="col">
+          <a class="brand-tile" href="catalog.html" aria-label="The Ordinary — перейти в каталог">
+            <img src="images/brands/the-ordinary.png" alt="The Ordinary" width="600" height="360" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

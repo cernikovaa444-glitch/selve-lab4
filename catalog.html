@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог — магазин косметики SELVE.">
+    <title>Каталог — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html" aria-current="page">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page catalog-page">
+      <nav aria-label="Путь по сайту">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        </ol>
+      </nav>
+      <div class="catalog-layout">
+        <aside class="filters" aria-labelledby="filters-title">
+          <h2 id="filters-title">Фильтры</h2>
+          <form id="filters" action="catalog.html" method="get">
+            <fieldset>
+              <legend>Категория</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="category-0" name="category" value="face" checked>
+                <label class="form-check-label" for="category-0">Уход за лицом</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="category-1" name="category" value="makeup">
+                <label class="form-check-label" for="category-1">Макияж</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="category-2" name="category" value="body">
+                <label class="form-check-label" for="category-2">Тело</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="category-3" name="category" value="perfume">
+                <label class="form-check-label" for="category-3">Парфюмерия</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Бренд</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="brand-0" name="brand" value="loreal">
+                <label class="form-check-label" for="brand-0">L’Oréal Paris</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="brand-1" name="brand" value="la-roche-posay">
+                <label class="form-check-label" for="brand-1">La Roche-Posay</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="brand-2" name="brand" value="maybelline">
+                <label class="form-check-label" for="brand-2">Maybelline New York</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="brand-3" name="brand" value="catrice">
+                <label class="form-check-label" for="brand-3">Catrice</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Цена</legend>
+              <div class="row g-2">
+                <div class="col">
+                  <label class="visually-hidden" for="price-from">Цена от</label>
+                  <input class="form-control" id="price-from" name="price_from" type="number" min="0" placeholder="от">
+                </div>
+                <div class="col">
+                  <label class="visually-hidden" for="price-to">Цена до</label>
+                  <input class="form-control" id="price-to" name="price_to" type="number" min="0" placeholder="до">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Тип продукта</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type-0" name="type" value="cream">
+                <label class="form-check-label" for="type-0">Крем</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type-1" name="type" value="serum">
+                <label class="form-check-label" for="type-1">Сыворотка</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type-2" name="type" value="tonic">
+                <label class="form-check-label" for="type-2">Тоник</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type-3" name="type" value="oil">
+                <label class="form-check-label" for="type-3">Масло</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="type-4" name="type" value="shampoo">
+                <label class="form-check-label" for="type-4">Шампунь</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Эффект</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="effect-0" name="effect" value="moisturizing">
+                <label class="form-check-label" for="effect-0">Увлажнение</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="effect-1" name="effect" value="nutrition">
+                <label class="form-check-label" for="effect-1">Питание</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="effect-2" name="effect" value="problem-skin">
+                <label class="form-check-label" for="effect-2">Для проблемной кожи</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="effect-3" name="effect" value="anti-age">
+                <label class="form-check-label" for="effect-3">Антивозрастной</label>
+              </div>
+            </fieldset>
+            <button class="btn btn-outline-selve w-100" type="reset">Сбросить</button>
+          </form>
+        </aside>
+        <section class="catalog-content" aria-labelledby="catalog-title">
+          <div class="catalog-heading">
+            <h1 id="catalog-title">Уход за лицом</h1>
+            <label class="visually-hidden" for="sort">Сортировка</label>
+            <select class="form-select" id="sort" name="sort" form="filters">
+              <option value="popular">По популярности</option>
+              <option value="price-asc">Сначала дешевле</option>
+              <option value="price-desc">Сначала дороже</option>
+            </select>
+          </div>
+          <div class="row row-cols-2 row-cols-lg-3 product-grid">
+            <div class="col">
+              <article class="product-card">
+                <a href="product.html" aria-label="Увлажняющий крем Beauty Skin — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/cream-jar.jpg" alt="Увлажняющий крем Beauty Skin" loading="lazy">
+                  </div>
+                  <h3>Увлажняющий крем Beauty Skin</h3>
+                </a>
+                <p class="product-price">2 490 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-serum.html" aria-label="Сыворотка для лица с ниацинамидом — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/serum.jpg" alt="Сыворотка для лица с ниацинамидом" loading="lazy">
+                  </div>
+                  <h3>Сыворотка для лица с ниацинамидом</h3>
+                </a>
+                <p class="product-price">1 590 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-cleanser.html" aria-label="Мягкая пенка для умывания — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/cleanser.jpg" alt="Мягкая пенка для умывания" loading="lazy">
+                  </div>
+                  <h3>Мягкая пенка для умывания</h3>
+                </a>
+                <p class="product-price">990 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-daily-care.html" aria-label="Питательный крем Daily Care — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/daily-care.jpg" alt="Питательный крем Daily Care" loading="lazy">
+                  </div>
+                  <h3>Питательный крем Daily Care</h3>
+                </a>
+                <p class="product-price">2 590 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-skincare-set.html" aria-label="Набор для ежедневного ухода — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/skincare-group.jpg" alt="Набор для ежедневного ухода" loading="lazy">
+                  </div>
+                  <h3>Набор для ежедневного ухода</h3>
+                </a>
+                <p class="product-price">2 590 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-soft-care.html" aria-label="Набор для очищения и ухода за лицом Soft Care — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/beauty-banner.jpg" alt="Набор для очищения и ухода за лицом Soft Care" loading="lazy">
+                  </div>
+                  <h3>Набор для очищения и ухода за лицом Soft Care</h3>
+                </a>
+                <p class="product-price">1 890 ₽</p>
+              </article>
+            </div>
+          </div>
+          <details class="catalog-note small-note" id="catalog-search">
+            <summary>Поиск и фильтры</summary>
+            <p class="mt-2">Каталог содержит демонстрационный набор товаров.</p>
+            <label class="form-label" for="search">Название товара</label>
+            <input type="search" class="form-control" id="search" name="q" form="filters" placeholder="Например, крем">
+          </details>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

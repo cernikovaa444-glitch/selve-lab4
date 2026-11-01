@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Магазин косметики SELVE: уход за лицом, макияж, средства для волос и парфюмерия.">
+    <title>Главная — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container home px-0">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="photo" src="images/beauty-banner.jpg" alt="Косметические средства для ухода за кожей">
+        <div class="hero-copy">
+          <h1 id="hero-title">Твоя красота<br>в твоих руках</h1>
+          <p>Профессиональная косметика<br>для лица, макияжа и заботы о себе</p>
+          <a class="btn btn-selve d-inline-flex align-items-center gap-3" href="catalog.html">
+            <span>Перейти в каталог</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <div class="home-content">
+        <nav class="categories" aria-label="Категории товаров">
+          <a class="category" href="catalog.html">
+            <img class="photo" src="images/cream-jar.jpg" alt="">
+            <span>Уход за лицом</span>
+          </a>
+          <a class="category" href="catalog.html">
+            <img class="photo" src="images/lipstick.jpg" alt="">
+            <span>Макияж</span>
+          </a>
+          <a class="category" href="catalog.html">
+            <img class="photo" src="images/hair-care.jpg" alt="">
+            <span>Волосы</span>
+          </a>
+          <a class="category" href="catalog.html">
+            <img class="photo" src="images/beauty-banner.jpg" alt="">
+            <span>Тело</span>
+          </a>
+          <a class="category" href="catalog.html">
+            <img class="photo" src="images/perfume.jpg" alt="">
+            <span>Парфюмерия</span>
+          </a>
+        </nav>
+        <section aria-labelledby="popular-title">
+          <h2 id="popular-title">Популярные товары</h2>
+          <div class="row row-cols-2 row-cols-md-4 product-grid">
+            <div class="col">
+              <article class="product-card">
+                <a href="product.html" aria-label="Увлажняющий крем Beauty Skin — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/cream-jar.jpg" alt="Увлажняющий крем Beauty Skin" loading="lazy">
+                  </div>
+                  <h3>Увлажняющий крем Beauty Skin</h3>
+                </a>
+                <p class="product-price">2 490 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-serum.html" aria-label="Сыворотка для лица с ниацинамидом — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/serum.jpg" alt="Сыворотка для лица с ниацинамидом" loading="lazy">
+                  </div>
+                  <h3>Сыворотка для лица с ниацинамидом</h3>
+                </a>
+                <p class="product-price">1 590 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-lipstick.html" aria-label="Увлажняющая губная помада — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/lipstick.jpg" alt="Увлажняющая губная помада" loading="lazy">
+                  </div>
+                  <h3>Увлажняющая губная помада</h3>
+                </a>
+                <p class="product-price">1 990 ₽</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="product-card">
+                <a href="product-perfume.html" aria-label="Парфюмерная вода Fresh — подробнее о товаре">
+                  <div class="product-photo">
+                    <img class="photo" src="images/perfume.jpg" alt="Парфюмерная вода Fresh" loading="lazy">
+                  </div>
+                  <h3>Парфюмерная вода Fresh</h3>
+                </a>
+                <p class="product-price">3 290 ₽</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="promo" aria-labelledby="promo-title">
+          <img class="photo" src="images/makeup-flatlay.jpg" alt="Декоративная косметика" loading="lazy">
+          <div class="promo-copy">
+            <h2 id="promo-title">Акции до −50%</h2>
+            <a class="btn btn-selve" href="sale.html">Смотреть все акции</a>
+          </div>
+        </section>
+        <section aria-labelledby="brands-title">
+          <h2 id="brands-title">Бренды</h2>
+          <div class="row row-cols-3 row-cols-md-6 brand-small g-3">
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="L’Oréal Paris — перейти в каталог">
+                <img src="images/brands/loreal-paris.png" alt="L’Oréal Paris" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="La Roche-Posay — перейти в каталог">
+                <img src="images/brands/la-roche-posay.png" alt="La Roche-Posay" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="Maybelline New York — перейти в каталог">
+                <img src="images/brands/maybelline.png" alt="Maybelline New York" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="Catrice — перейти в каталог">
+                <img src="images/brands/catrice.png" alt="Catrice" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="KEUNE — перейти в каталог">
+                <img src="images/brands/keune.png" alt="KEUNE" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+            <div class="col">
+              <a class="brand-tile" href="catalog.html" aria-label="VICHY — перейти в каталог">
+                <img src="images/brands/vichy.png" alt="VICHY" width="600" height="360" loading="lazy">
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+

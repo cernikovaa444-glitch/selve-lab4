@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Оформление заказа — магазин косметики SELVE.">
+    <title>Оформление заказа — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page content-page">
+      <h1>Оформление заказа</h1>
+      <form action="#order-preview" method="get" class="checkout-layout">
+        <section aria-labelledby="contact-title">
+          <h2 id="contact-title">Контактные данные</h2>
+          <div class="checkout-fields">
+            <div>
+              <label class="visually-hidden" for="customer-name">Имя</label>
+              <input class="form-control" id="customer-name" type="text" placeholder="Имя" autocomplete="given-name" minlength="2" maxlength="60" required>
+            </div>
+            <div>
+              <label class="visually-hidden" for="customer-phone">Телефон</label>
+              <input class="form-control" id="customer-phone" type="tel" placeholder="Телефон: +79991234567" autocomplete="tel" pattern="\+?[0-9]{10,15}" maxlength="16" title="Введите от 10 до 15 цифр без пробелов и скобок. В начале можно поставить +." required>
+            </div>
+            <div>
+              <label class="visually-hidden" for="customer-email">Email</label>
+              <input class="form-control" id="customer-email" type="email" placeholder="Email" autocomplete="email" required>
+            </div>
+          </div>
+          <h2 class="section-gap" id="delivery-title">Доставка</h2>
+          <fieldset class="delivery" aria-labelledby="delivery-title">
+            <legend class="visually-hidden">Способ доставки</legend>
+            <label for="courier">
+              <input class="form-check-input" type="radio" name="delivery" id="courier" value="courier">Курьером<span>590 ₽</span>
+            </label>
+            <label for="pickup">
+              <input class="form-check-input" type="radio" name="delivery" id="pickup" value="pickup" checked>Пункт выдачи<span>290 ₽</span>
+            </label>
+          </fieldset>
+        </section>
+        <section aria-labelledby="order-title">
+          <h2 id="order-title">Ваш заказ</h2>
+          <div class="mini-product">
+            <img class="photo" src="images/lipstick.jpg" alt="Губная помада" loading="lazy">
+            <p>Губная помада</p>
+            <strong>1 990 ₽</strong>
+          </div>
+          <div class="mini-product">
+            <img class="photo" src="images/daily-care.jpg" alt="Питательный крем" loading="lazy">
+            <p>Питательный крем</p>
+            <strong>2 590 ₽</strong>
+          </div>
+          <div class="mini-product">
+            <img class="photo" src="images/concealer.jpg" alt="Консилер" loading="lazy">
+            <p>Консилер</p>
+            <strong>419 ₽</strong>
+          </div>
+          <div class="order-total">Товары:  4 999 ₽<p class="delivery-total">Доставка: <span class="courier-total">590 ₽</span>
+              <span class="pickup-total">290 ₽</span>
+              <br>
+              <strong>Итого с доставкой: <span class="courier-total">5 589 ₽</span>
+                <span class="pickup-total">5 289 ₽</span>
+              </strong>
+            </p>
+          </div>
+          <button class="btn btn-selve w-100" type="submit">Подтвердить заказ</button>
+          <div class="demo-result" id="order-preview" role="status">Форма заполнена.<br>
+            <a href="catalog.html" class="text-link">Вернуться в каталог</a>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

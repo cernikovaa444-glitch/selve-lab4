@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Административная панель — магазин косметики SELVE.">
+    <title>Административная панель — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+<main id="main" class="container page workspace-page px-0">
+<div class="workspace admin">
+<aside class="sidebar">
+<h1>SELVE <small>Admin</small></h1>
+<nav aria-label="Административное меню">
+<a href="admin.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"></path></svg><span>Главная</span></a>
+<a href="#products"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 7 9-5 9 5v10l-9 5-9-5zM3 7l9 5 9-5M12 12v10"></path></svg><span>Товары</span></a>
+<a href="#promotions"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8l10 10-8 8L3 11z"></path><circle cx="7" cy="7" r="1"></circle></svg><span>Акции</span></a>
+<a href="#orders"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h9l5 5v15H5zM14 2v6h5M8 12h8M8 16h8"></path></svg><span>Заказы</span></a>
+<a href="account.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3H3v18h7M9 12h12m-5-5 5 5-5 5"></path></svg><span>Выход</span></a>
+</nav>
+</aside>
+<div class="workspace-main">
+<section class="view-panel" id="products" aria-labelledby="products-title">
+<h2 id="products-title">Товары</h2>
+<div class="table-responsive">
+<table class="table">
+<thead><tr><th scope="col">Название</th><th scope="col">Цена</th><th scope="col">Действия</th></tr></thead>
+<tbody>
+<tr><td>Увлажняющий крем Beauty Skin</td><td><span class="text-nowrap">2 490 ₽</span></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#product-edit-beauty" aria-label="Редактировать: Увлажняющий крем Beauty Skin" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#product-trash-beauty" aria-label="Удалить: Увлажняющий крем Beauty Skin" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+<tr><td>Сыворотка для лица с ниацинамидом</td><td><span class="text-nowrap">1 590 ₽</span></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#product-edit-serum" aria-label="Редактировать: Сыворотка для лица с ниацинамидом" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#product-trash-serum" aria-label="Удалить: Сыворотка для лица с ниацинамидом" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+<tr><td>Мягкая пенка для умывания</td><td><span class="text-nowrap">990 ₽</span></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#product-edit-cleanser" aria-label="Редактировать: Мягкая пенка для умывания" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#product-trash-cleanser" aria-label="Удалить: Мягкая пенка для умывания" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+<tr><td>Питательный крем Daily Care</td><td><span class="text-nowrap">2 590 ₽</span></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#product-edit-daily" aria-label="Редактировать: Питательный крем Daily Care" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#product-trash-daily" aria-label="Удалить: Питательный крем Daily Care" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+</tbody>
+</table>
+</div><div class="admin-add"><a class="btn btn-selve" href="admin-forms.html#product-new"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg><span>Добавить товар</span></a></div>
+</section>
+<section class="view-panel" id="promotions" aria-labelledby="promotions-title">
+<h2 id="promotions-title">Акции</h2>
+<div class="table-responsive">
+<table class="table">
+<thead><tr><th scope="col">Предложение</th><th scope="col">Раздел</th><th scope="col">Действия</th></tr></thead>
+<tbody>
+<tr><td>Специальные цены на уход</td><td><a href="sale.html">Акции</a></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#promotion-edit-care" aria-label="Редактировать: Специальные цены на уход" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#promotion-trash-care" aria-label="Удалить: Специальные цены на уход" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+<tr><td>Скидки на макияж</td><td><a href="sale.html">Акции</a></td><td><div class="table-actions"><a class="action-button" href="admin-forms.html#promotion-edit-makeup" aria-label="Редактировать: Скидки на макияж" title="Редактировать"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg></a><a class="action-button" href="admin-forms.html#promotion-trash-makeup" aria-label="Удалить: Скидки на макияж" title="Удалить"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"></path></svg></a></div></td></tr>
+</tbody>
+</table>
+</div><div class="admin-add"><a class="btn btn-selve" href="admin-forms.html#promotion-new"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg><span>Добавить акцию</span></a></div>
+</section>
+<section class="view-panel" id="orders" aria-labelledby="orders-title">
+<h2 id="orders-title">Заказы</h2>
+<div class="table-responsive">
+<table class="table">
+<thead><tr><th scope="col">Номер</th><th scope="col">Сумма товаров</th><th scope="col">Статус</th><th scope="col">Действия</th></tr></thead>
+<tbody>
+<tr><td>№ 1001</td><td><span class="text-nowrap">4 999 ₽</span></td><td><span class="order-status">Получен</span></td><td><a class="btn btn-outline-selve order-edit" href="admin-forms.html#order-edit-1001"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7a2 2 0 0 0-5-5L4 14z"></path></svg><span>Редактировать</span></a></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="default-panel" aria-labelledby="dashboard-title">
+<h2 id="dashboard-title">Панель управления</h2>
+<nav class="dashboard-links" aria-label="Разделы панели"><a href="#products">Товары</a><a href="#promotions">Акции</a><a href="#orders">Заказы</a></nav>
+</section>
+</div>
+</div>
+</main>
+  </body>
+</html>

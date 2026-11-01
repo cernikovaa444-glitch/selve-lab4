@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Административная панель — магазин косметики SELVE.">
+    <title>Формы администратора — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+<main id="main" class="container page content-page">
+<div class="workspace-main">
+<section class="view-panel" id="product-new" aria-labelledby="product-new-title">
+<h1 id="product-new-title">Добавление товара</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-new">
+<div>
+<label class="form-label" for="product-new-name">Название товара</label>
+<input class="form-control" id="product-new-name" name="title" type="text" value="" maxlength="120" required>
+</div><div>
+<label class="form-label" for="product-new-price">Цена, ₽</label>
+<input class="form-control" id="product-new-price" name="price" type="number" value="" min="0" step="1" required>
+</div><div>
+<label class="form-label" for="product-new-description">Описание</label>
+<textarea class="form-control" id="product-new-description" name="description" rows="4" maxlength="600" required></textarea>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-edit-beauty" aria-labelledby="product-edit-beauty-title">
+<h1 id="product-edit-beauty-title">Редактирование товара</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-beauty">
+<div>
+<label class="form-label" for="product-edit-beauty-name">Название товара</label>
+<input class="form-control" id="product-edit-beauty-name" name="title" type="text" value="Увлажняющий крем Beauty Skin" maxlength="120" required>
+</div><div>
+<label class="form-label" for="product-edit-beauty-price">Цена, ₽</label>
+<input class="form-control" id="product-edit-beauty-price" name="price" type="number" value="2490" min="0" step="1" required>
+</div><div>
+<label class="form-label" for="product-edit-beauty-description">Описание</label>
+<textarea class="form-control" id="product-edit-beauty-description" name="description" rows="4" maxlength="600" required>Крем для ежедневного ухода за кожей лица.</textarea>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-edit-serum" aria-labelledby="product-edit-serum-title">
+<h1 id="product-edit-serum-title">Редактирование товара</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-serum">
+<div>
+<label class="form-label" for="product-edit-serum-name">Название товара</label>
+<input class="form-control" id="product-edit-serum-name" name="title" type="text" value="Сыворотка для лица с ниацинамидом" maxlength="120" required>
+</div><div>
+<label class="form-label" for="product-edit-serum-price">Цена, ₽</label>
+<input class="form-control" id="product-edit-serum-price" name="price" type="number" value="1590" min="0" step="1" required>
+</div><div>
+<label class="form-label" for="product-edit-serum-description">Описание</label>
+<textarea class="form-control" id="product-edit-serum-description" name="description" rows="4" maxlength="600" required>Сыворотка для ухода за кожей лица.</textarea>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-edit-cleanser" aria-labelledby="product-edit-cleanser-title">
+<h1 id="product-edit-cleanser-title">Редактирование товара</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-cleanser">
+<div>
+<label class="form-label" for="product-edit-cleanser-name">Название товара</label>
+<input class="form-control" id="product-edit-cleanser-name" name="title" type="text" value="Мягкая пенка для умывания" maxlength="120" required>
+</div><div>
+<label class="form-label" for="product-edit-cleanser-price">Цена, ₽</label>
+<input class="form-control" id="product-edit-cleanser-price" name="price" type="number" value="990" min="0" step="1" required>
+</div><div>
+<label class="form-label" for="product-edit-cleanser-description">Описание</label>
+<textarea class="form-control" id="product-edit-cleanser-description" name="description" rows="4" maxlength="600" required>Средство для очищения кожи лица.</textarea>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-edit-daily" aria-labelledby="product-edit-daily-title">
+<h1 id="product-edit-daily-title">Редактирование товара</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-daily">
+<div>
+<label class="form-label" for="product-edit-daily-name">Название товара</label>
+<input class="form-control" id="product-edit-daily-name" name="title" type="text" value="Питательный крем Daily Care" maxlength="120" required>
+</div><div>
+<label class="form-label" for="product-edit-daily-price">Цена, ₽</label>
+<input class="form-control" id="product-edit-daily-price" name="price" type="number" value="2590" min="0" step="1" required>
+</div><div>
+<label class="form-label" for="product-edit-daily-description">Описание</label>
+<textarea class="form-control" id="product-edit-daily-description" name="description" rows="4" maxlength="600" required>Крем для питания кожи лица.</textarea>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="promotion-new" aria-labelledby="promotion-new-heading">
+<h1 id="promotion-new-heading">Добавление акции</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="promotion-new">
+<div>
+<label class="form-label" for="promotion-new-title">Название акции</label>
+<input class="form-control" id="promotion-new-title" name="title" type="text" value="" maxlength="120" required>
+</div><div>
+<label class="form-label" for="promotion-new-section">Раздел</label>
+<select class="form-select" id="promotion-new-section" name="section" required><option value="sale">Акции</option></select>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#promotions">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="promotion-edit-care" aria-labelledby="promotion-edit-care-heading">
+<h1 id="promotion-edit-care-heading">Редактирование акции</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="promotion-care">
+<div>
+<label class="form-label" for="promotion-edit-care-title">Название акции</label>
+<input class="form-control" id="promotion-edit-care-title" name="title" type="text" value="Специальные цены на уход" maxlength="120" required>
+</div><div>
+<label class="form-label" for="promotion-edit-care-section">Раздел</label>
+<select class="form-select" id="promotion-edit-care-section" name="section" required><option value="sale">Акции</option></select>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#promotions">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="promotion-edit-makeup" aria-labelledby="promotion-edit-makeup-heading">
+<h1 id="promotion-edit-makeup-heading">Редактирование акции</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="promotion-makeup">
+<div>
+<label class="form-label" for="promotion-edit-makeup-title">Название акции</label>
+<input class="form-control" id="promotion-edit-makeup-title" name="title" type="text" value="Скидки на макияж" maxlength="120" required>
+</div><div>
+<label class="form-label" for="promotion-edit-makeup-section">Раздел</label>
+<select class="form-select" id="promotion-edit-makeup-section" name="section" required><option value="sale">Акции</option></select>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#promotions">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-trash-beauty" aria-labelledby="product-trash-beauty-title">
+<h1 id="product-trash-beauty-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-beauty">
+<p>Запись: <strong>Увлажняющий крем Beauty Skin</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="product-trash-beauty-confirm" name="confirm" value="yes" required><label class="form-check-label" for="product-trash-beauty-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-trash-serum" aria-labelledby="product-trash-serum-title">
+<h1 id="product-trash-serum-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-serum">
+<p>Запись: <strong>Сыворотка для лица с ниацинамидом</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="product-trash-serum-confirm" name="confirm" value="yes" required><label class="form-check-label" for="product-trash-serum-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-trash-cleanser" aria-labelledby="product-trash-cleanser-title">
+<h1 id="product-trash-cleanser-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-cleanser">
+<p>Запись: <strong>Мягкая пенка для умывания</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="product-trash-cleanser-confirm" name="confirm" value="yes" required><label class="form-check-label" for="product-trash-cleanser-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="product-trash-daily" aria-labelledby="product-trash-daily-title">
+<h1 id="product-trash-daily-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="product-daily">
+<p>Запись: <strong>Питательный крем Daily Care</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="product-trash-daily-confirm" name="confirm" value="yes" required><label class="form-check-label" for="product-trash-daily-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#products">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="promotion-trash-care" aria-labelledby="promotion-trash-care-title">
+<h1 id="promotion-trash-care-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="promotion-care">
+<p>Запись: <strong>Специальные цены на уход</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="promotion-trash-care-confirm" name="confirm" value="yes" required><label class="form-check-label" for="promotion-trash-care-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#promotions">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="promotion-trash-makeup" aria-labelledby="promotion-trash-makeup-title">
+<h1 id="promotion-trash-makeup-title">Подтверждение удаления</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="promotion-makeup">
+<p>Запись: <strong>Скидки на макияж</strong></p>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="promotion-trash-makeup-confirm" name="confirm" value="yes" required><label class="form-check-label" for="promotion-trash-makeup-confirm">Подтверждаю выбор записи для удаления</label></div>
+<button class="btn btn-selve" type="submit">Подтвердить</button>
+<a class="text-link" href="admin.html#promotions">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="order-edit-1001" aria-labelledby="order-edit-1001-title">
+<h1 id="order-edit-1001-title">Редактирование заказа № 1001</h1>
+<form class="profile-fields" action="admin-forms.html#result" method="get">
+<input type="hidden" name="record" value="order-1001">
+<div>
+<label class="form-label" for="order-status">Статус заказа</label>
+<select class="form-select" id="order-status" name="status" required><option value="new">Новый</option><option value="processing">Собирается</option><option value="shipped">Отправлен</option><option value="received" selected>Получен</option><option value="cancelled">Отменён</option></select>
+</div>
+<button class="btn btn-selve" type="submit">Проверить форму</button>
+<a class="text-link" href="admin.html#orders">Вернуться к списку</a>
+</form>
+<p class="small-note mt-4">Учебная форма: данные проверяются браузером, изменения в таблице не сохраняются.</p>
+</section>
+<section class="view-panel" id="result" aria-labelledby="result-title">
+<h1 id="result-title">Форма проверена</h1>
+<p role="status">Обязательные поля заполнены. Это учебная демонстрация: данные не сохраняются и записи не удаляются.</p>
+<nav class="d-flex flex-wrap gap-4" aria-label="Вернуться к спискам"><a class="text-link" href="admin.html#products">Товары</a><a class="text-link" href="admin.html#promotions">Акции</a><a class="text-link" href="admin.html#orders">Заказы</a></nav>
+</section>
+<section class="default-panel"><h1>Формы администратора</h1><p>Выберите действие в административной панели.</p><a class="btn btn-selve" href="admin.html">Открыть панель управления</a></section>
+</div>
+</main>
+  </body>
+</html>

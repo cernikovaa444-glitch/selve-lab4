@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Акции — магазин косметики SELVE. Учебный проект по HTML и Bootstrap.">
+    <title>Акции — SELVE</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="SELVE — главная">SELVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="sale.html" aria-current="page">Акции</a>
+          <a href="brands.html">Бренды</a>
+          <a href="about.html">О магазине</a>
+        </nav>
+        <a class="search-box" href="catalog.html#catalog-search" aria-label="Перейти к поиску в каталоге">
+          <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+            <circle cx="10" cy="10" r="6.5"></circle>
+            <path d="m15 15 6 6"></path>
+          </svg>
+          <span>Поиск товаров</span>
+        </a>
+        <nav class="header-actions" aria-label="Покупателю">
+          <a class="icon-link" href="auth.html" aria-label="Вход и регистрация" title="Вход и регистрация">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 22v-3a8 8 0 0 1 16 0v3"></path>
+            </svg>
+          </a>
+          <a class="icon-link" href="cart.html" aria-label="Корзина" title="Корзина">
+            <svg class="icon" viewbox="0 0 24 24" aria-hidden="true">
+              <path d="M5 7h14l1 15H4L5 7Z"></path>
+              <path d="M8 8V5a4 4 0 0 1 8 0v3"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page content-page">
+      <nav aria-label="Хлебные крошки">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Акции</li>
+        </ol>
+      </nav>
+      <h1>Акции</h1>
+      <div class="row row-cols-2 row-cols-md-4 product-grid">
+        <div class="col">
+          <article class="product-card">
+            <a href="product.html" aria-label="Увлажняющий крем Beauty Skin — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/cream-jar.jpg" alt="Увлажняющий крем Beauty Skin" loading="lazy">
+              </div>
+              <h3>Увлажняющий крем Beauty Skin</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">2 990 ₽</del>2 490 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-serum.html" aria-label="Сыворотка для лица с ниацинамидом — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/serum.jpg" alt="Сыворотка для лица с ниацинамидом" loading="lazy">
+              </div>
+              <h3>Сыворотка для лица с ниацинамидом</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">1 990 ₽</del>1 590 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-cleanser.html" aria-label="Мягкая пенка для умывания — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/cleanser.jpg" alt="Мягкая пенка для умывания" loading="lazy">
+              </div>
+              <h3>Мягкая пенка для умывания</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">1 290 ₽</del>990 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-lipstick.html" aria-label="Увлажняющая губная помада — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/lipstick.jpg" alt="Увлажняющая губная помада" loading="lazy">
+              </div>
+              <h3>Увлажняющая губная помада</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">2 490 ₽</del>1 990 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-concealer.html" aria-label="Жидкий консилер Natural Finish — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/concealer.jpg" alt="Жидкий консилер Natural Finish" loading="lazy">
+              </div>
+              <h3>Жидкий консилер Natural Finish</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">599 ₽</del>419 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-hair-care.html" aria-label="Шампунь и кондиционер для волос — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/hair-care.jpg" alt="Шампунь и кондиционер для волос" loading="lazy">
+              </div>
+              <h3>Шампунь и кондиционер для волос</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">2 390 ₽</del>1 790 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-perfume.html" aria-label="Парфюмерная вода Fresh — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/perfume.jpg" alt="Парфюмерная вода Fresh" loading="lazy">
+              </div>
+              <h3>Парфюмерная вода Fresh</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">4 190 ₽</del>3 290 ₽</p>
+          </article>
+        </div>
+        <div class="col">
+          <article class="product-card">
+            <a href="product-skincare-set.html" aria-label="Набор для ежедневного ухода — подробнее о товаре">
+              <div class="product-photo">
+                <img class="photo" src="images/skincare-group.jpg" alt="Набор для ежедневного ухода" loading="lazy">
+              </div>
+              <h3>Набор для ежедневного ухода</h3>
+            </a>
+            <p class="product-price">
+              <del class="old-price">3 490 ₽</del>2 590 ₽</p>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
